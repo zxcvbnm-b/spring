@@ -1,0 +1,284 @@
+#pageinfo a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 14px;
+}
+
+#pageinfo a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
+}
+/*通知字体颜色  */
+.noticeColor{
+	color: cornflowerblue;
+}
+.weiduColor{
+	
+	
+}
+/* 发布问题页面  */
+#center-puQuestion{
+	background-color: white;
+	
+}
+#center{
+	background-color: rgb(255, 255, 255);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+margin-left: 174.6px;
+margin-right: 174.6px;
+overflow: hidden;
+overflow-x: hidden;
+overflow-y: hidden;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 20px;
+width: 1170px;	
+margin-bottom: 50px;
+}
+
+body{
+background-image: url("/img/back.jpg");		
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+#login_div{
+/* margin: auto;
+margin: 50px;
+	width: 500px;
+height: 330px;
+border: black 2px solid; 
+
+z-index:1;
+
+ position: fixed;
+ 
+  */
+  padding: 50px;
+  box-shadow:5px 5px 5px ;
+background-color: #9ccdc17d;
+  display: none;
+   /*就是这个position:fixed起作用，生成相对定位的元素，相对于其正常位置进行定位。*/
+     position:fixed;
+
+     /*这里都是对外边距进行设置*/
+     margin:auto;
+     left:0;
+     right:0;
+     top:0;
+     bottom:0;
+
+     /*设置div的宽和高*/
+     width:500px;
+     height:330px;
+
+     /*设置超出范围后，就隐藏超出的部分*/
+     overflow: hidden;
+
+     /*设置边框*/
+     border: 2px solid #AEBBCA;
+
+     /*设置背景颜色*/
+
+     /*设置鼠标的样式*/
+     cursor: move; 
+}
+.tishi{
+	
+font-size:14px;
+right: 50px;
+
+}
+#show{
+	
+display:none;
+	
+}
+#register_div{
+	
+	margin: auto;
+	width:500px;
+	min-width:10%;
+border: black 2px solid; 
+padding: 50px;
+z-index:1;
+box-shadow:5px 5px 5px ;
+background-color: #9ccdc17d;
+	background-repeat: no-repeat;
+}
+#tishixinxi{
+display:none;
+margin:auto;
+width:200px;
+height:50px;	
+
+}
+#category_check{
+	 border: 2px solid #AEBBCA;
+	background-color: #bac7c5;
+	
+}
+#img_tao{
+	
+	width: 42px;
+height: 42px;
+	
+}
+.btn-comment{
+	cursor: pointer;
+display: block;
+float: right;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-language-override: normal;
+font-optical-sizing: auto;
+font-size: 14px;
+font-size-adjust: none;
+font-stretch: 100%;
+font-style: normal;
+font-variant: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 400;
+line-height: 20px;
+margin-bottom: 10px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+overflow: visible;
+overflow-x: visible;
+overflow-y: visible;
+padding-bottom: 6px;
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 6px;
+text-align: center;
+text-decoration: none;
+text-decoration-color: rgb(255, 255, 255);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+text-transform: none;
+touch-action: manipulation;
+user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+-moz-appearance: button;	
+}
+.comments{
+	border-bottom-color: rgb(238, 238, 238);
+border-bottom-style: solid;
+border-bottom-width: 0.8px;
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+float: left;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 15px;
+min-height: 1px;
+padding-bottom: 5px;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+width: 872.4px;
+	
+}
+.menu{
+box-sizing: border-box;
+
+
+display: inline-block;
+font-family: "Glyphicons Halflings";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px;
+position: relative;
+top: 1px;
+	
+}
+.menu:HOVER {
+	color: rgb(73, 158, 243);
+	cursor: pointer;
+}
+/* 標籤樣式 */
+#info a{
+font-size:25px;	
+margin-right: 5px;
+background-color:rgb(35, 82, 124);
+color: white;
+}
+#info a:HOVER{
+ cursor: pointer;
+}
+
+/*提示信息 */
+
+/* 弹窗 (background) */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 设置在顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+ 
+/* 弹窗内容 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+ 
+/* 关闭按钮 */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

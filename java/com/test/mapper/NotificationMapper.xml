@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.NotificationMapper" >
+  <resultMap id="BaseResultMap" type="com.test.entity.Notification" >
+    <id column="notification_id" property="notificationId" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIME" />
+    <result column="notice_state" property="noticeState" jdbcType="INTEGER" />
+    <result column="notice_type" property="noticeType" jdbcType="INTEGER" />
+    <result column="notice_outer" property="noticeOuter" jdbcType="INTEGER" />
+    <result column="notice_inner" property="noticeInner" jdbcType="INTEGER" />
+    <result column="notice_question_id" property="noticeQuestionId" jdbcType="INTEGER" />
+    <result column="notice_test" property="noticeTest" jdbcType="INTEGER" />
+    <result column="notice_test2" property="noticeTest2" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    notification_id, create_time, notice_state, notice_type, notice_outer, notice_inner, 
+    notice_question_id, notice_test, notice_test2
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.test.entity.NotificationExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from notification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from notification
+    where notification_id = #{notificationId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from notification
+    where notification_id = #{notificationId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.test.entity.NotificationExample" >
+    delete from notification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.test.entity.Notification" >
+    insert into notification (notification_id, create_time, notice_state, 
+      notice_type, notice_outer, notice_inner, 
+      notice_question_id, notice_test, notice_test2
+      )
+    values (#{notificationId,jdbcType=INTEGER}, #{createTime,jdbcType=TIME}, #{noticeState,jdbcType=INTEGER}, 
+      #{noticeType,jdbcType=INTEGER}, #{noticeOuter,jdbcType=INTEGER}, #{noticeInner,jdbcType=INTEGER}, 
+      #{noticeQuestionId,jdbcType=INTEGER}, #{noticeTest,jdbcType=INTEGER}, #{noticeTest2,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.test.entity.Notification" >
+    insert into notification
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="notificationId != null" >
+        notification_id,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="noticeState != null" >
+        notice_state,
+      </if>
+      <if test="noticeType != null" >
+        notice_type,
+      </if>
+      <if test="noticeOuter != null" >
+        notice_outer,
+      </if>
+      <if test="noticeInner != null" >
+        notice_inner,
+      </if>
+      <if test="noticeQuestionId != null" >
+        notice_question_id,
+      </if>
+      <if test="noticeTest != null" >
+        notice_test,
+      </if>
+      <if test="noticeTest2 != null" >
+        notice_test2,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="notificationId != null" >
+        #{notificationId,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIME},
+      </if>
+      <if test="noticeState != null" >
+        #{noticeState,jdbcType=INTEGER},
+      </if>
+      <if test="noticeType != null" >
+        #{noticeType,jdbcType=INTEGER},
+      </if>
+      <if test="noticeOuter != null" >
+        #{noticeOuter,jdbcType=INTEGER},
+      </if>
+      <if test="noticeInner != null" >
+        #{noticeInner,jdbcType=INTEGER},
+      </if>
+      <if test="noticeQuestionId != null" >
+        #{noticeQuestionId,jdbcType=INTEGER},
+      </if>
+      <if test="noticeTest != null" >
+        #{noticeTest,jdbcType=INTEGER},
+      </if>
+      <if test="noticeTest2 != null" >
+        #{noticeTest2,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.test.entity.NotificationExample" resultType="java.lang.Integer" >
+    select count(*) from notification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update notification
+    <set >
+      <if test="record.notificationId != null" >
+        notification_id = #{record.notificationId,jdbcType=INTEGER},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIME},
+      </if>
+      <if test="record.noticeState != null" >
+        notice_state = #{record.noticeState,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeType != null" >
+        notice_type = #{record.noticeType,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeOuter != null" >
+        notice_outer = #{record.noticeOuter,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeInner != null" >
+        notice_inner = #{record.noticeInner,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeQuestionId != null" >
+        notice_question_id = #{record.noticeQuestionId,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeTest != null" >
+        notice_test = #{record.noticeTest,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeTest2 != null" >
+        notice_test2 = #{record.noticeTest2,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update notification
+    set notification_id = #{record.notificationId,jdbcType=INTEGER},
+      create_time = #{record.createTime,jdbcType=TIME},
+      notice_state = #{record.noticeState,jdbcType=INTEGER},
+      notice_type = #{record.noticeType,jdbcType=INTEGER},
+      notice_outer = #{record.noticeOuter,jdbcType=INTEGER},
+      notice_inner = #{record.noticeInner,jdbcType=INTEGER},
+      notice_question_id = #{record.noticeQuestionId,jdbcType=INTEGER},
+      notice_test = #{record.noticeTest,jdbcType=INTEGER},
+      notice_test2 = #{record.noticeTest2,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.test.entity.Notification" >
+    update notification
+    <set >
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIME},
+      </if>
+      <if test="noticeState != null" >
+        notice_state = #{noticeState,jdbcType=INTEGER},
+      </if>
+      <if test="noticeType != null" >
+        notice_type = #{noticeType,jdbcType=INTEGER},
+      </if>
+      <if test="noticeOuter != null" >
+        notice_outer = #{noticeOuter,jdbcType=INTEGER},
+      </if>
+      <if test="noticeInner != null" >
+        notice_inner = #{noticeInner,jdbcType=INTEGER},
+      </if>
+      <if test="noticeQuestionId != null" >
+        notice_question_id = #{noticeQuestionId,jdbcType=INTEGER},
+      </if>
+      <if test="noticeTest != null" >
+        notice_test = #{noticeTest,jdbcType=INTEGER},
+      </if>
+      <if test="noticeTest2 != null" >
+        notice_test2 = #{noticeTest2,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where notification_id = #{notificationId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.test.entity.Notification" >
+    update notification
+    set create_time = #{createTime,jdbcType=TIME},
+      notice_state = #{noticeState,jdbcType=INTEGER},
+      notice_type = #{noticeType,jdbcType=INTEGER},
+      notice_outer = #{noticeOuter,jdbcType=INTEGER},
+      notice_inner = #{noticeInner,jdbcType=INTEGER},
+      notice_question_id = #{noticeQuestionId,jdbcType=INTEGER},
+      notice_test = #{noticeTest,jdbcType=INTEGER},
+      notice_test2 = #{noticeTest2,jdbcType=VARCHAR}
+    where notification_id = #{notificationId,jdbcType=INTEGER}
+  </update>
+</mapper>

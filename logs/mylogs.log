@@ -1,0 +1,494 @@
+2019-10-06 20:47:40.769  INFO 28144 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 28144 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-06 20:47:40.770  INFO 28144 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-06 20:47:40.840  INFO 28144 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1db526: startup date [Sun Oct 06 20:47:40 GMT+08:00 2019]; root of context hierarchy
+2019-10-06 20:47:41.857  INFO 28144 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-06 20:47:42.384  INFO 28144 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f97e3f01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-06 20:47:43.769  INFO 28144 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-06 20:47:43.779  INFO 28144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-06 20:47:43.780  INFO 28144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-06 20:47:44.011  INFO 28144 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-06 20:47:44.015  INFO 28144 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-06 20:47:44.015  INFO 28144 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3181 ms
+2019-10-06 20:47:44.189  INFO 28144 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-06 20:47:44.192  INFO 28144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-06 20:47:44.193  INFO 28144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-06 20:47:44.193  INFO 28144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-06 20:47:44.193  INFO 28144 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-06 20:47:45.294  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1db526: startup date [Sun Oct 06 20:47:40 GMT+08:00 2019]; root of context hierarchy
+2019-10-06 20:47:45.399  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-06 20:47:45.400  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-06 20:47:45.401  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-06 20:47:45.404  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-06 20:47:45.406  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-06 20:47:45.407  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-06 20:47:45.407  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-06 20:47:45.409  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-06 20:47:45.410  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-06 20:47:45.411  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-06 20:47:45.412  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-06 20:47:45.412  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-06 20:47:45.413  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-06 20:47:45.414  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-06 20:47:45.414  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:47:45.414  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-06 20:47:45.414  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:47:45.415  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-06 20:47:45.418  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-06 20:47:45.418  INFO 28144 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:47:45.468  INFO 28144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:47:45.469  INFO 28144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:47:45.501  INFO 28144 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-06 20:47:45.540  INFO 28144 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:47:46.119  INFO 28144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-06 20:47:46.186  INFO 28144 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-06 20:47:46.196  INFO 28144 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-06 20:47:46.201  INFO 28144 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-06 20:47:46.218  INFO 28144 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-06 20:47:46.225  INFO 28144 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-06 20:47:46.344  INFO 28144 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-06 20:47:46.355  INFO 28144 --- [restartedMain] com.test.Application                     : Started Application in 5.956 seconds (JVM running for 6.529)
+2019-10-06 20:48:12.667  INFO 11968 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 11968 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-06 20:48:12.668  INFO 11968 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-06 20:48:12.746  INFO 11968 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769d8b: startup date [Sun Oct 06 20:48:12 GMT+08:00 2019]; root of context hierarchy
+2019-10-06 20:48:13.702  INFO 11968 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-06 20:48:14.129  INFO 11968 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b4f5b549] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-06 20:48:15.300  INFO 11968 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-06 20:48:15.310  INFO 11968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-06 20:48:15.311  INFO 11968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-06 20:48:15.528  INFO 11968 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-06 20:48:15.533  INFO 11968 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-06 20:48:15.533  INFO 11968 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2796 ms
+2019-10-06 20:48:15.703  INFO 11968 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-06 20:48:15.710  INFO 11968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-06 20:48:15.710  INFO 11968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-06 20:48:15.710  INFO 11968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-06 20:48:15.711  INFO 11968 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-06 20:48:16.745  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@769d8b: startup date [Sun Oct 06 20:48:12 GMT+08:00 2019]; root of context hierarchy
+2019-10-06 20:48:16.844  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-06 20:48:16.845  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-06 20:48:16.846  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-06 20:48:16.847  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-06 20:48:16.848  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-06 20:48:16.849  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-06 20:48:16.849  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-06 20:48:16.850  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-06 20:48:16.852  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-06 20:48:16.853  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-06 20:48:16.853  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-06 20:48:16.854  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-06 20:48:16.854  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-06 20:48:16.856  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:48:16.856  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-06 20:48:16.857  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-06 20:48:16.857  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:48:16.857  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-06 20:48:16.860  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-06 20:48:16.861  INFO 11968 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-06 20:48:16.914  INFO 11968 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:48:16.915  INFO 11968 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:48:16.949  INFO 11968 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-06 20:48:16.994  INFO 11968 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-06 20:48:17.554  INFO 11968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-06 20:48:17.615  INFO 11968 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-06 20:48:17.624  INFO 11968 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-06 20:48:17.626  INFO 11968 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-06 20:48:17.644  INFO 11968 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-06 20:48:17.651  INFO 11968 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-06 20:48:17.756  INFO 11968 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-06 20:48:17.773  INFO 11968 --- [restartedMain] com.test.Application                     : Started Application in 5.504 seconds (JVM running for 6.191)
+2019-10-23 17:24:37.258  INFO 70152 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 70152 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-23 17:24:37.261  INFO 70152 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-23 17:24:37.335  INFO 70152 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:24:37 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:24:38.128  INFO 70152 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-23 17:24:38.508  INFO 70152 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$99d33c4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:24:39.553  INFO 70152 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-23 17:24:39.565  INFO 70152 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 17:24:39.566  INFO 70152 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-23 17:24:39.825  INFO 70152 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-23 17:24:39.833  INFO 70152 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 17:24:39.834  INFO 70152 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2503 ms
+2019-10-23 17:24:40.052  INFO 70152 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-23 17:24:40.057  INFO 70152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:24:40.057  INFO 70152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:24:40.059  INFO 70152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:24:40.059  INFO 70152 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:24:41.007  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:24:37 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:24:41.084  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-23 17:24:41.085  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-23 17:24:41.085  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:24:41.085  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-23 17:24:41.086  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-23 17:24:41.086  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-23 17:24:41.086  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:24:41.087  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-23 17:24:41.087  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-23 17:24:41.088  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-23 17:24:41.088  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-23 17:24:41.088  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-23 17:24:41.088  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-23 17:24:41.089  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:24:41.089  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-23 17:24:41.089  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:24:41.089  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:24:41.090  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:24:41.091  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:24:41.092  INFO 70152 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:24:41.127  INFO 70152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:24:41.127  INFO 70152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:24:41.154  INFO 70152 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-23 17:24:41.175  INFO 70152 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:24:41.620  INFO 70152 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 17:24:41.666  INFO 70152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-23 17:24:41.679  INFO 70152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-23 17:24:41.681  INFO 70152 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-23 17:24:41.698  INFO 70152 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-23 17:24:41.705  INFO 70152 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-23 17:24:41.788  INFO 70152 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-23 17:24:41.793  INFO 70152 --- [restartedMain] com.test.Application                     : Started Application in 4.904 seconds (JVM running for 5.456)
+2019-10-23 17:24:42.866 ERROR 70152 --- [pool-3-thread-1] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.21.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334) ~[mysql-connector-java-5.1.21.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.23.jar:na]
+	at com.github.pagehelper.PageHelper.getUrl(PageHelper.java:284) [pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.getSqlUtil(PageHelper.java:310) [pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.initSqlUtil(PageHelper.java:266) [pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:253) [pagehelper-4.1.6.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) [mybatis-3.4.0.jar:3.4.0]
+	at com.sun.proxy.$Proxy96.query(Unknown Source) [na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) [mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) [mybatis-3.4.0.jar:3.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) [mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy65.selectList(Unknown Source) [na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231) [mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128) [mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68) [mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53) [mybatis-3.4.0.jar:3.4.0]
+	at com.sun.proxy.$Proxy73.selectByExample(Unknown Source) [na:na]
+	at com.test.utils.MyQuartzUtils.reportCurrentTime(MyQuartzUtils.java:31) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) [spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_65]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_65]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_65]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_65]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_65]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_65]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_65]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_65]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.21.jar:na]
+	... 54 common frames omitted
+
+2019-10-23 17:24:42.877 ERROR 70152 --- [pool-3-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:79) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:447) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at com.sun.proxy.$Proxy65.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:231) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:128) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:68) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53) ~[mybatis-3.4.0.jar:3.4.0]
+	at com.sun.proxy.$Proxy73.selectByExample(Unknown Source) ~[na:na]
+	at com.test.utils.MyQuartzUtils.reportCurrentTime(MyQuartzUtils.java:31) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_65]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308) [na:1.8.0_65]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_65]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_65]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_65]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_65]
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+### Cause: java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150) ~[mybatis-3.4.0.jar:3.4.0]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141) ~[mybatis-3.4.0.jar:3.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_65]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_65]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:434) ~[mybatis-spring-1.3.0.jar:1.3.0]
+	... 20 common frames omitted
+Caused by: java.lang.RuntimeException: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.github.pagehelper.PageHelper.getUrl(PageHelper.java:287) ~[pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.getSqlUtil(PageHelper.java:310) ~[pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.initSqlUtil(PageHelper.java:266) ~[pagehelper-4.1.6.jar:na]
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:253) ~[pagehelper-4.1.6.jar:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.4.0.jar:3.4.0]
+	at com.sun.proxy.$Proxy96.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148) ~[mybatis-3.4.0.jar:3.4.0]
+	... 26 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2393) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2430) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2215) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.21.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_65]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_65]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_65]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422) ~[na:1.8.0_65]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334) ~[mysql-connector-java-5.1.21.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.23.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.23.jar:na]
+	at com.github.pagehelper.PageHelper.getUrl(PageHelper.java:284) ~[pagehelper-4.1.6.jar:na]
+	... 32 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_65]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_65]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_65]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_65]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_65]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_65]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_65]
+	at java.net.Socket.<init>(Socket.java:434) ~[na:1.8.0_65]
+	at java.net.Socket.<init>(Socket.java:244) ~[na:1.8.0_65]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:257) ~[mysql-connector-java-5.1.21.jar:na]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.21.jar:na]
+	... 54 common frames omitted
+
+2019-10-23 17:25:43.233  INFO 131892 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 131892 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-23 17:25:43.234  INFO 131892 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-23 17:25:43.285  INFO 131892 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:25:43 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:25:44.112  INFO 131892 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-23 17:25:44.575  INFO 131892 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b322ae51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:25:45.545  INFO 131892 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-23 17:25:45.554  INFO 131892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 17:25:45.555  INFO 131892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-23 17:25:45.827  INFO 131892 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-23 17:25:45.831  INFO 131892 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 17:25:45.831  INFO 131892 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2549 ms
+2019-10-23 17:25:45.973  INFO 131892 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-23 17:25:45.976  INFO 131892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:25:45.976  INFO 131892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:25:45.976  INFO 131892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:25:45.976  INFO 131892 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:25:46.840  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:25:43 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:25:46.896  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-23 17:25:46.897  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-23 17:25:46.897  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:25:46.898  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-23 17:25:46.898  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-23 17:25:46.899  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-23 17:25:46.899  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:25:46.900  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-23 17:25:46.900  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-23 17:25:46.900  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-23 17:25:46.901  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-23 17:25:46.901  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-23 17:25:46.901  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-23 17:25:46.902  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:25:46.902  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-23 17:25:46.902  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:25:46.902  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:25:46.902  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:25:46.904  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:25:46.905  INFO 131892 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:25:46.933  INFO 131892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:25:46.933  INFO 131892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:25:46.953  INFO 131892 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-23 17:25:46.974  INFO 131892 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:25:47.337  INFO 131892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 17:25:47.379  INFO 131892 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-23 17:25:47.385  INFO 131892 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-23 17:25:47.388  INFO 131892 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-23 17:25:47.399  INFO 131892 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-23 17:25:47.405  INFO 131892 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-23 17:25:47.472  INFO 131892 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-23 17:25:47.475  INFO 131892 --- [restartedMain] com.test.Application                     : Started Application in 4.507 seconds (JVM running for 4.987)
+2019-10-23 17:27:19.443  INFO 131892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:27:19.444  INFO 131892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:27:19.473  INFO 131892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-10-23 17:29:50.964  INFO 44404 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 44404 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-23 17:29:50.965  INFO 44404 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-23 17:29:51.013  INFO 44404 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:29:51 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:29:51.736  INFO 44404 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-23 17:29:52.173  INFO 44404 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c4f93dd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:29:53.083  INFO 44404 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-23 17:29:53.092  INFO 44404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 17:29:53.092  INFO 44404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-23 17:29:53.275  INFO 44404 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-23 17:29:53.279  INFO 44404 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 17:29:53.279  INFO 44404 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2269 ms
+2019-10-23 17:29:53.417  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-23 17:29:53.422  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:29:53.423  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:29:53.423  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:29:53.423  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:29:54.169  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:29:51 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:29:54.227  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-23 17:29:54.228  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-23 17:29:54.229  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:29:54.229  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-23 17:29:54.229  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-23 17:29:54.230  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-23 17:29:54.230  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:29:54.231  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-23 17:29:54.231  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-23 17:29:54.231  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-23 17:29:54.231  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-23 17:29:54.232  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-23 17:29:54.232  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-23 17:29:54.232  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:29:54.233  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:29:54.233  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-23 17:29:54.233  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:29:54.233  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:29:54.235  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:29:54.235  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:29:54.268  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:29:54.268  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:29:54.286  INFO 44404 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-23 17:29:54.309  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:29:54.663  INFO 44404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 17:29:54.707  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-23 17:29:54.718  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-23 17:29:54.722  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-23 17:29:54.733  INFO 44404 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-23 17:29:54.738  INFO 44404 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-23 17:29:54.801  INFO 44404 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-23 17:29:54.807  INFO 44404 --- [restartedMain] com.test.Application                     : Started Application in 4.195 seconds (JVM running for 4.67)
+2019-10-23 17:30:12.432  INFO 44404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-23 17:30:12.433  INFO 44404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-23 17:30:12.458  INFO 44404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-10-23 17:34:11.997  WARN 44404 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+2019-10-23 17:37:10.913  INFO 44404 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d73f0b: startup date [Wed Oct 23 17:29:51 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:37:10.928  INFO 44404 --- [Thread-6] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2019-10-23 17:37:10.934  INFO 44404 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-10-23 17:37:10.936  INFO 44404 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-10-23 17:37:11.745  INFO 44404 --- [restartedMain] com.test.Application                     : Starting Application on LAPTOP-36EJB0PL with PID 44404 (E:\workspace-test\ste\target\classes started by ø’π»”ƒ¿º in E:\workspace-test\ste)
+2019-10-23 17:37:11.746  INFO 44404 --- [restartedMain] com.test.Application                     : No active profile set, falling back to default profiles: default
+2019-10-23 17:37:11.750  INFO 44404 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9b6f1a: startup date [Wed Oct 23 17:37:11 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:37:12.146  INFO 44404 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]]
+2019-10-23 17:37:12.252  INFO 44404 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c4f93dd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-23 17:37:12.404  INFO 44404 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-10-23 17:37:12.404  INFO 44404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-23 17:37:12.405  INFO 44404 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-10-23 17:37:12.503  INFO 44404 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-10-23 17:37:12.507  INFO 44404 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-23 17:37:12.507  INFO 44404 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 757 ms
+2019-10-23 17:37:12.557  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-10-23 17:37:12.558  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-23 17:37:12.558  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-23 17:37:12.558  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-23 17:37:12.558  INFO 44404 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-23 17:37:12.972  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@9b6f1a: startup date [Wed Oct 23 17:37:11 GMT+08:00 2019]; root of context hierarchy
+2019-10-23 17:37:12.994  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment(com.test.dto.CommentDTO)
+2019-10-23 17:37:12.995  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comment/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.CommentController.getComment2(java.lang.String)
+2019-10-23 17:37:12.995  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/file/upload]}" onto private com.test.dto.FileUploadDTO com.test.web.FileUploadController.Fileupload(org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:37:12.995  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test]}" onto private java.lang.String com.test.web.HostTopicController.HostTopic() throws org.quartz.SchedulerException
+2019-10-23 17:37:12.996  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.test.web.IndexController.test(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int,java.lang.String)
+2019-10-23 17:37:12.996  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabels(org.springframework.ui.Model)
+2019-10-23 17:37:12.996  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/labels/{id}],methods=[POST]}" onto private java.lang.Object com.test.web.LabelsController.getLabel(org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:37:12.997  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getnotices/{userid}]}" onto private java.lang.String com.test.web.NoticeController.getNotices(java.lang.String,org.springframework.ui.Model)
+2019-10-23 17:37:12.997  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/callback]}" onto public java.lang.String com.test.web.OauthController.GitHubOauth(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2019-10-23 17:37:12.998  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/{question_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.FindQuestion(java.lang.String,org.springframework.ui.Model,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-10-23 17:37:12.998  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/question/user_question/{user_id}]}" onto public java.lang.String com.test.web.QuestionContrlloer.Questions(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)
+2019-10-23 17:37:12.998  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.addQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.test.entity.Question)
+2019-10-23 17:37:12.998  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/puquestion]}" onto public java.lang.String com.test.web.QuestionContrlloer.puQuestion(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-10-23 17:37:12.999  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto private java.lang.String com.test.web.UserController.UserLogin(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:37:12.999  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/personal_data/{user_id}]}" onto private java.lang.String com.test.web.UserController.personal_data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model,java.lang.String)
+2019-10-23 17:37:12.999  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout]}" onto private java.lang.String com.test.web.UserController.UserLoginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2019-10-23 17:37:12.999  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register]}" onto private java.lang.String com.test.web.UserController.UserRegister(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:37:12.999  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/register_success]}" onto private java.lang.String com.test.web.UserController.Register(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.test.entity.User,org.springframework.web.multipart.MultipartFile) throws java.lang.IllegalStateException,java.io.IOException
+2019-10-23 17:37:13.001  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-23 17:37:13.002  INFO 44404 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-23 17:37:13.014  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:37:13.014  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:37:13.025  INFO 44404 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionInterceptor
+2019-10-23 17:37:13.037  INFO 44404 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-23 17:37:13.192  INFO 44404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-23 17:37:13.235  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-10-23 17:37:13.238  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2019-10-23 17:37:13.240  INFO 44404 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2019-10-23 17:37:13.243  INFO 44404 --- [restartedMain] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-10-23 17:37:13.247  INFO 44404 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-10-23 17:37:13.263  INFO 44404 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-10-23 17:37:13.267  INFO 44404 --- [restartedMain] com.test.Application                     : Started Application in 1.578 seconds (JVM running for 443.13)
